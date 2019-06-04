@@ -10,8 +10,8 @@
 
 int main()
 {
-    //freopen("input.txt", "r", stdin);
-    //freopen("output.txt", "w", stdout);
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
     std::vector<cl::Platform> platforms;
     std::vector<cl::Device> devices;
     std::vector<cl::Kernel> kernels;
