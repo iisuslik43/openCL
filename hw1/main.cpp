@@ -50,10 +50,10 @@ int main()
         }
 
         // create a message to send to kernel
-        size_t const group_size = 32;
-        size_t const block_size = 16;
+        size_t const block_size = 32;
         int N, M;
         std::cin >> N >> M;
+        size_t const group_size = (N / block_size + 1) * block_size;
 
         std::vector<double> a(N * N);
         std::vector<double> b(M * M);
